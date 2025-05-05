@@ -1,9 +1,10 @@
 # This program determines if an email address is valid seeking the characters "@", and "."
 def main ():
     #User input
-    address = input("Please enter emailo address to check validity")
-    print ("The address entered is:" + address)
-    
+    address = input("Please enter email address to check validity ")
+    print (" The address entered is:" + address)
+    addressVal(address)
+
 def addressVal(address):
     dot = address.find(".")
     at = address.find("@")
@@ -13,5 +14,6 @@ def addressVal(address):
         print("invalid")
     else:
         print("valid")
+        
 
-    main()
+main()
